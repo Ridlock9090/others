@@ -36,11 +36,8 @@ jobs:
 
     - name: Static analysis
       run: |
-        npm run lint
+        npm run lint      
       
-    - name: Manual review
-      # This would typically be done by a human
-        
     - name: Approval check
       if: success()
       run: echo "All checks passed. Ready to merge."
